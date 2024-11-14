@@ -1,38 +1,87 @@
-.App {
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #DA291C; /* Fondo rojo */
+  color: #fff; /* Texto blanco para resaltar sobre el fondo rojo */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centrado vertical */
+  text-align: center; /* Centrado horizontal */
+}
+
+h1, h2, h3 {
+  color: #fff; /* Color blanco para los encabezados */
+}
+
+button {
+  background-color: #FFC72C;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-size: 1em;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #DA291C;
+  color: #fff;
+}
+
+table {
+  width: 80%; /* Reduce el ancho de la tabla */
+  max-width: 900px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto; /* Centramos la tabla */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
   text-align: center;
+  border: 1px solid #DA291C;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+th {
+  background-color: #FFC72C;
+  color: #333;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center; /* Centra los elementos del formulario */
 }
 
-.App-link {
-  color: #61dafb;
+select, input[type="date"], input[type="number"] {
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #DA291C;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  font-weight: bold;
+  color: #fff; /* Texto blanco en los labels */
+}
+
+h1 {
+  color: #FFC72C; /* Título en color amarillo */
+  margin-bottom: 20px;
+}
+
+div {
+  text-align: center; /* Centrado de los elementos dentro de div */
+  width: 100%;
 }
